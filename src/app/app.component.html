@@ -1,0 +1,7 @@
+<app-sizer
+  [(size)]="fontSizePx"
+  (sizeChange)="fontSizePx.value = $event.value"
+></app-sizer>
+<p [style.font-size.px]="fontSizePx.value">
+  FontSize Parent: {{ fontSizePx.value }}px
+</p>
